@@ -1,0 +1,129 @@
+.container{
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  width: 70%;
+}
+.topics .image{
+  position: relative;
+}
+.topics .selector{
+  position: absolute;
+  top: 0;
+  margin: 20px;
+  margin-top: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.selector .step1{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.step1 span{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  /* background-color: hsl(217, 100%, 97%); */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.step1 .selected{
+  background-color: hsl(217, 100%, 97%);
+  color: hsl(213, 96%, 18%)
+}
+.step1 .info-step{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.info-step h3{
+  font-size: 13px;
+  color: hsl(231, 11%, 63%);
+  margin: 0;
+}
+.info-step h2{
+  font-size: 18px;
+  margin: 0;
+  color: hsl(231, 100%, 99%);
+}
+
+
+.info-details{
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.info-details .head h1{
+  color: hsl(213, 96%, 18%);
+}
+.info-details .head h4{
+  color: hsl(231, 11%, 63%);
+}
+form{
+  position: relative;
+  margin-top: 15px;
+}
+.info-data{
+  display: flex;
+  flex-direction: column;
+}
+.info-data .personal-data{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.info-data .personal-data .head-per h1{
+  font-size: 20px;
+  color: hsl(213, 96%, 18%);
+  text-align: center;
+}
+.info-data .personal-data .tail-per h2{
+  font-size: 16px;
+  color: hsl(231, 11%, 63%);
+  margin-bottom: 5px;
+}
+
+.info-details .btns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+}
+.info-details .btns .btn button{
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+}
+.info-details .btns .btn button:hover{
+  opacity: 0.7;
+}
+.info-details .btns .btn-back{
+  background-color: white;
+}
+.info-details .btns .btn-back button{
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: hsl(231, 11%, 63%);
+}
+.info-details .btns .btn-back button:hover{
+  color: hsl(213, 96%, 18%);
+}

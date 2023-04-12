@@ -1,0 +1,85 @@
+<main>
+  <div class="container">
+    <div class="topics">
+      <div class="image">
+        <svg xmlns="http://www.w3.org/2000/svg" width="274" height="568" fill="none" viewBox="0 0 274 568"><rect width="274" height="568" fill="#483EFF" rx="10"/><mask id="a" width="274" height="568" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><rect width="274" height="568" fill="#fff" rx="10"/></mask><g mask="url(#a)"><path fill="#6259FF" fill-rule="evenodd" d="M-34.692 543.101C3.247 632.538 168.767 685.017 211.96 612.52c43.194-72.497-66.099-85.653-104.735-160.569-38.635-74.916-68.657-121.674-124.482-104.607-55.824 17.068-55.375 106.32-17.436 195.757Z" clip-rule="evenodd"/><path fill="#F9818E" fill-rule="evenodd" d="M233.095 601.153c60.679-28.278 92.839-143.526 41.875-171.528-50.965-28.003-57.397 47.579-108.059 75.987-50.662 28.408-82.14 50.207-69.044 88.241 13.096 38.034 74.549 35.578 135.228 7.3Z" clip-rule="evenodd"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="5" d="m165.305 469.097 10.607-10.806M209.461 474.581l-12.506-10.503M187.56 488.991l-6.908 14.798"/><path fill="#FFAF7E" d="M.305 546.891c37.003 0 67-29.997 67-67s-29.997-67-67-67-67 29.997-67 67 29.997 67 67 67Z"/></g></svg>
+      </div>
+      <div class="selector">
+        <div class="step1">
+          <span>1</span>
+          <div class="info-step">
+            <h3>STEP 1</h3>
+            <h2>YOUR INFO</h2>
+          </div>
+        </div>
+        <div class="step1">
+          <span>2</span>
+          <div class="info-step">
+            <h3>STEP 2</h3>
+            <h2>SELECT PLAN</h2>
+          </div>
+        </div>
+        <div class="step1">
+          <span class="selected">3</span>
+          <div class="info-step">
+            <h3>STEP 3</h3>
+            <h2>ADD-ONS</h2>
+          </div>
+        </div>
+        <div class="step1" >
+          <span>4</span>
+          <div class="info-step">
+            <h3>STEP 4</h3>
+            <h2>SUMMARY</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info-details">
+      <div class="head">
+        <h1>Pick add-ons</h1>
+        <h4>Add-ons help enhance your gaming experience</h4>
+      </div>
+      <form [formGroup]="formGroup">
+        <div class="service" (click)="toggleCheckbox('onlineService')" >
+          <input type="checkbox" [checked]="true" formControlName="onlineService"/>
+          <div class="details">
+            <div class="head-service">
+              <h2>Online Service</h2>
+              <p>Access to multi player game</p>
+            </div>
+            <span>+$1/mo</span>
+          </div>
+        </div>
+        <div class="service" (click)="toggleCheckbox('largerStorage')">
+          <input type="checkbox" formControlName="largerStorage"/>
+          <div class="details">
+            <div class="head-service">
+              <h2>Larger Storage</h2>
+              <p>Extra 1 TP of cloud save</p>
+            </div>
+            <span>+$2/mo</span>
+          </div>
+        </div>
+        <div class="service" (click)="toggleCheckbox('customizableProfile')">
+          <input type="checkbox" formControlName="customizableProfile"/>
+          <div class="details">
+            <div class="head-service">
+              <h2>Customizable Profile</h2>
+              <p>Custom theme on your profile</p>
+            </div>
+            <span>+$2/mo</span>
+          </div>
+        </div>
+      </form>
+      <div class="btns">
+        <div class="btn-back">
+          <button (click)="goback()">Go Back</button>
+        </div>
+        <div class="btn">
+          <button (click)="nextStep()" type="submit">Next Step</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

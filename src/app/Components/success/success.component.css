@@ -1,0 +1,82 @@
+.container{
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  width: 70%;
+}
+.topics .image{
+  position: relative;
+}
+.topics .selector{
+  position: absolute;
+  top: 0;
+  margin: 20px;
+  margin-top: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.selector .step1{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.step1 span{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  /* background-color: hsl(217, 100%, 97%); */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.step1 .selected{
+  background-color: hsl(217, 100%, 97%);
+  color: hsl(213, 96%, 18%)
+}
+.step1 .info-step{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.info-step h3{
+  font-size: 13px;
+  color: hsl(231, 11%, 63%);
+  margin: 0;
+}
+.info-step h2{
+  font-size: 18px;
+  margin: 0;
+  color: hsl(231, 100%, 99%);
+}
+
+
+.info-details{
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.info-details .head h1{
+  color: hsl(213, 96%, 18%);
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.info-details p{
+  color: hsl(231, 11%, 63%);
+  width: 400px;
+}
+form{
+  position: relative;
+  margin-top: 0;
+  top: -20px;
+}
+
